@@ -243,7 +243,6 @@ void Round::deal() {
     }
 }
 
-// REQUIRES AT LEAST 2 PLAYERS ACTIVE AT START OF EVERY FUNCTION CALL - why?
 bool Round::collectBets(bool blind) {
     double currBet = roundBets[activePlayers.front()];
     if (blind) {
