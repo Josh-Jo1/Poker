@@ -12,3 +12,12 @@ ${EXEC}: ${OBJECTS}
 .PHONY: clean
 clean:
 	rm ${OBJECTS} ${DEPENDS} ${EXEC}
+
+
+.PHONY: odds
+odds:
+	g++ -g -std=c++14 -Wall card.cc oddsCalc.cc mainOdds.cc -o oddsCalc
+
+.PHONY: cleanOdds
+cleanOdds:
+	rm oddsCalc
